@@ -1,0 +1,22 @@
+-use below command to create a sts.desktop file 
+   $sudo nano /usr/share/applications/sts.desktop
+
+
+
+[Desktop Entry]
+Type=Application
+Name=sts
+Comment=Spring Tool Suite
+Icon=/home/ved/Documents/SpringToolSuit/icon.xpm
+Exec=/home/ved/Documents/SpringToolSuit/SpringToolSuite4
+Terminal=false
+Categories=Development;IDE;Java;
+StartupWMClass=STS
+
+
+- Save the file with .desktop extension
+- Right click the file >properties>permissions
+- Tick Allow executing file as program
+
+  If you do not have owner permission, grant permission with below command
+    $ sudo chown -R ved /usr/share/applications/sts.desktop
